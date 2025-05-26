@@ -1,8 +1,8 @@
 ---------------------------------------------------------------------------------
 --
--- 					   		MoonCresta for DE2-35 
+-- 				MoonCresta for DE2-35 
 --          		          Pinballwiz.org
---							    22/05/2025
+--				    22/05/2025
 --
 --	              DE2-35 toplevel code by Pinballwiz.org 
 -- All Other code from Katsumi Degawa and the Mister project (Respective Authors)
@@ -12,7 +12,7 @@
 --   5 : Add coin
 --   2 : Start 2 players
 --   1 : Start 1 player
---   Z : Fire
+--   LCtrl : Fire
 --   RIGHT arrow : Move Right
 --   LEFT arrow  : Move Left
 ---------------------------------------------------------------------------------
