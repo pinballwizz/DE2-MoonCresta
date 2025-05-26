@@ -311,7 +311,7 @@ begin
 
 	mc_stars : entity work.MC_STARS
 	port map (
-		I_CLK_18M     => W_CLK_18M,
+		I_CLK_18M     => W_CLK_12M,
 		I_CLK_6M      => W_CLK_6M,
 		I_H_FLIP      => W_H_FLIP,
 		I_V_SYNC      => W_V_SYNC_int,
