@@ -56,7 +56,8 @@ end;
 
 architecture RTL of MC_INPORT is
 
-	constant W_TABLE   : std_logic := '0';  -- UP = 0;
+	constant W_TABLE   : std_logic := '0'; -- not used
+	constant COCKTAIL  : std_logic := '1';
 	constant W_TEST    : std_logic := '0';
 	constant W_SERVICE : std_logic := '0';
 
@@ -66,9 +67,12 @@ architecture RTL of MC_INPORT is
 
 begin
 
-	W_SW0_DO <= x"00" when I_SW0_OE = '0' else W_SERVICE & W_TEST &  W_TABLE &  I_1P_SH &  I_1P_RI & I_1P_LE & I_COIN2    & I_COIN1;
-	W_SW1_DO <= x"00" when I_SW1_OE = '0' else "000"                         &  I_2P_SH &  I_2P_RI & I_2P_LE & I_2P_START & I_1P_START;
-	W_DIP_DO <= x"00" when I_DIP_OE = '0' else "00000100";
+	W_SW0_DO <= x"00" when I_SW0_OE = '0' else W_SERVICE & W_TEST & W_TABLE &  I_1P_SH &  I_1P_RI & I_1P_LE & I_COIN2    & I_COIN1;
+	W_SW1_DO <= x"00" when I_SW1_OE = '0' else "010" & I_2P_SH &  I_2P_RI & I_2P_LE & I_2P_START & I_1P_START;
+	W_DIP_DO <= x"00" when I_DIP_OE = '0' else "0000" & COCKTAIL & "000";
 	O_D      <= W_SW0_DO or W_SW1_DO or W_DIP_DO ;
 
+	-- 010 = 1 coin 1 play
+	-- 000 = 2 coin 1 play
+	
 end RTL;
