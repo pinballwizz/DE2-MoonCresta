@@ -32,9 +32,9 @@ begin
       if KbdScanCode = x"72" then joy_BBBBFRLDU(1) <= not(IsReleased); end if; -- down
       if KbdScanCode = x"6B" then joy_BBBBFRLDU(2) <= not(IsReleased); end if; -- left
       if KbdScanCode = x"74" then joy_BBBBFRLDU(3) <= not(IsReleased); end if; -- right
-      if KbdScanCode = x"1A" then joy_BBBBFRLDU(4) <= not(IsReleased); end if; -- z
-      if KbdScanCode = x"16" then joy_BBBBFRLDU(5) <= not(IsReleased); end if; -- 1
-      if KbdScanCode = x"21" then joy_BBBBFRLDU(6) <= not(IsReleased); end if; -- c
+      if KbdScanCode = x"14" then joy_BBBBFRLDU(4) <= not(IsReleased); end if; -- LCtrl
+      if KbdScanCode = x"16" then joy_BBBBFRLDU(5) <= not(IsReleased); end if; -- 1 P1 start
+      if KbdScanCode = x"1E" then joy_BBBBFRLDU(6) <= not(IsReleased); end if; -- 2 P2 start
       if KbdScanCode = x"2E" then joy_BBBBFRLDU(7) <= not(IsReleased); end if; -- 5
       if KbdScanCode = x"22" then joy_BBBBFRLDU(8) <= not(IsReleased); end if; -- x
 
