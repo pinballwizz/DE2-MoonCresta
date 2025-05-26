@@ -35,7 +35,7 @@ begin
       if KbdScanCode = x"14" then joy_BBBBFRLDU(4) <= not(IsReleased); end if; -- LCtrl
       if KbdScanCode = x"16" then joy_BBBBFRLDU(5) <= not(IsReleased); end if; -- 1 P1 start
       if KbdScanCode = x"1E" then joy_BBBBFRLDU(6) <= not(IsReleased); end if; -- 2 P2 start
-      if KbdScanCode = x"2E" then joy_BBBBFRLDU(7) <= not(IsReleased); end if; -- 5
+      if KbdScanCode = x"2E" then joy_BBBBFRLDU(7) <= not(IsReleased); end if; -- 5 Coin
       if KbdScanCode = x"22" then joy_BBBBFRLDU(8) <= not(IsReleased); end if; -- x
 
       if KbdScanCode = x"05" then fn_pulse(0) <= not(IsReleased); end if; -- F1
