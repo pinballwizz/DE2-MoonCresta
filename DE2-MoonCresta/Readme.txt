@@ -2,7 +2,7 @@ Moon Cresta for the Altera DE2-35 Dev Board. Pinballwiz.org 2025
 Original Sources by Katsumi Degawa.
 
 Notes:
-Setup for keyboard controls (5 = Coin) (Start P1 = 1) (Z = Fire) (Arrow Keys = Move L or R)
+Setup for keyboard controls in Cocktail mode (5 = Coin) (1 = P1 Start) (2 = P2 Start)(LCtrl = Fire) (Arrow Keys = Move L or R)
 
 Build:
 * Obtain correct roms file for MoonCresta (see scripts in tools folder for rom details).
